@@ -1,0 +1,90 @@
+main {
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 80%;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+  .img-desktop {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: $clr-focus;
+    font-weight: $fweight-bold;
+    font-size: 3em;
+  }
+  p {
+    padding: 20px 0px;
+    font-size: 1.25em;
+    color: $clr-verydarkblue;
+    font-weight: $fweight-regular;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: hsl(14, 88%, 65%);
+      font-weight: $fweight-bold;
+    }
+  }
+  .mailbox {
+    display: none;
+  }
+  .question-box {
+    border-bottom: $clr-divider solid 2px;
+  }
+  form {
+    float: right;
+    transform: translateY(-35px);
+  }
+  .btn {
+    background-color: white;
+    border: none;
+    transition: transform ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  .FAQ-image {
+    height: 140px;
+    background-image: url(/images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center -15px;
+    text-align: center;
+    img {
+      transform: translate(-15px, -120px);
+    }
+  }
+  .answer {
+    display: none;
+  }
+}
+
+@media only screen and(min-width:1200px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    max-width: 1300px;
+    padding: 20px 20px 0px 0px;
+    h1 {
+      text-align: left;
+    }
+    .img-mobile {
+      display: none;
+    }
+    .mailbox {
+      display: block;
+      position: relative;
+      top: 330px;
+      right: 90px;
+    }
+    section {
+      padding: 5em 3em;
+    }
+    .FAQ-image {
+      background-image: url(/images/illustration-woman-online-desktop.svg),
+        url(/images/bg-pattern-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: -80px center, -570px 70%;
+      height: 100%;
+    }
+  }
+}

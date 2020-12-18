@@ -1,0 +1,17 @@
+.question1 {
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+  transition: color ease-in-out 0.3s;
+}
+.answer {
+  padding: 0px 10% 20px 0px;
+  color: $clr-darkblue;
+  font-size: 1.1em;
+}
+.display {
+  display: block !important;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: transform ease-in-out 0.3s;
+}

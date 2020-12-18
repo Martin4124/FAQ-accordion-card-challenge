@@ -1,0 +1,22 @@
+@import "./utilities";
+@import "./main";
+@import "./javascriptclasses";
+*,
+*::before,
+*::after {
+  box-sizing: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient($bg-violet, $bg-blue);
+  font-family: $ff-primary;
+  font-size: 12px;
+}
+html {
+  height: 100%;
+}
+
+@media only screen and(min-width:800px) {
+}
